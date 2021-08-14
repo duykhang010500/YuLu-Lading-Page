@@ -1,0 +1,55 @@
+.started {
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: #fbfbfb;
+  position: relative;
+  padding: 60px 20px;
+
+  &__desc {
+    margin-top: 30px;
+    max-width: 240px;
+    margin-bottom: 50px;
+    color: $gray-dark;
+  }
+
+  &__comment {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+  }
+
+  &__smile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+  }
+
+  @media screen and (max-width: 1279px) {
+    &__smile {
+      transform: translate(23%,-50%);
+      max-width: 18%;
+    }
+  }
+  
+
+  @media screen and (max-width: 1023px) {
+    &__comment,
+    &__smile {
+      transform: none;
+      max-width: 18%;
+    }
+  }
+  
+  
+  @media screen and (max-width: 767px) {
+    &__comment,
+    &__smile {
+      max-width: 20%;
+      transform: none;
+    }
+
+  }
+  
+}
